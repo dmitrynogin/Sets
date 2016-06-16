@@ -27,7 +27,7 @@ Now, how to test the set (it is just a combined condition underneath, nothing el
 
     bool isLiquidWater = liquidWaterC[25]; // = true
 
-Actually, tests return `Enumerable<T>`, which is truthy; it could be falsy if empty. We can iterate the result, getting 0 or 1 element.
+Actually, tests return `Intersection<T>`, which is truthy; it could be falsy if empty. It implements `IEnumerable<T>`, so we can iterate the result, getting 0 or 1 element.
 
 Union operator provides us with an another set:
 
@@ -39,7 +39,7 @@ The most useful feature is an integration with `IEnumerable<T>`. Let’s have:
 
 We can test them:
 
-    IEnumerable<int> t = temperatures[tempC]; // = 0, 10, 100, 200
+    Intersection<T> t = temperatures[tempC]; // = 0, 10, 100, 200
 
 We can join them, so result will be another `Set<T>`:
 
