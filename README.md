@@ -41,9 +41,9 @@ We can test them:
 
     Intersection<T> t = temperatures[tempC]; // = 0, 10, 100, 200
 
-We can join them, so result will be another `Set<T>`:
+We can union them, so result will be another `Set<T>`:
 
-    Set<T> joined = temperatures & tempC; // -100, -10, 0 … 100, 200
+    Set<T> joined = temperatures | tempC; // -100, -10, 0 … 100, 200
 
 We can even exclude set from enumeration getting an enumeration, or exclude enumeration from set – getting set as a result.
 
