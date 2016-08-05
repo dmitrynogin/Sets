@@ -1,9 +1,9 @@
 # Sets
 
-Thesis
+__Thesis__
 There is a full featured support of countable sets in .NET: `IEnumerable<T>`. What about uncountable sets; sets defined by predicate? How can they be manipulated and interact with `IEnumerable<T>`?
 
-Solution
+__Solution__
 Let’s introduce two library classes: `Universe` and `Set<T>`, where Universe is a factory of Sets and Sets are defined by predicate, condition like `Func<T, bool>`. Example:
 
     using static Universe; 
